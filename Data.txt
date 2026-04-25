@@ -1,0 +1,48 @@
+
+USE student_management;
+
+INSERT INTO Students (name, email, department) VALUES
+('Rajkumar', 'rajkumar@gmail.com', 'AI & DS'),
+('Meghana', 'meghana@gmail.com', 'AI & DS'),
+('Arya', 'arya@gmail.com', 'CSE'),
+('Jaanu', 'jaanu@gmail.com', 'ECE'),
+('Rohan', 'rohan@gmail.com', 'CSE'),
+('Nitin', 'nitin@gmail.com', 'ME'),
+('Sneha', 'sneha@gmail.com', 'AI & DS'),
+('Kiran', 'kiran@gmail.com', 'ECE');
+
+INSERT INTO Courses (course_name, credits) VALUES
+('Database Systems', 4),
+('Machine Learning', 4),
+('Operating Systems', 3),
+('Computer Networks', 3),
+('Data Structures', 4);
+
+INSERT INTO Instructors (name) VALUES
+('Dr. Sharma'),
+('Prof. Iyer'),
+('Dr. Khan');
+
+INSERT INTO Enrollments (student_id, course_id, instructor_id) VALUES
+(1, 1, 1),
+(1, 2, 2),
+(2, 2, 2),
+(2, 3, 1),
+(3, 1, 3),
+(4, 4, 1),
+(5, 5, 2),
+(6, 3, 3),
+(7, 2, 2),
+(8, 4, 1);
+
+INSERT INTO Grades (enrollment_id, grade) VALUES
+(1, 'A'),
+(2, 'B'),
+(3, 'A'),
+(4, 'C'),
+(5, 'B'),
+(6, 'A'),
+(7, 'B'),
+(8, 'C'),
+(9, 'A'),
+(10, 'B');
